@@ -1,0 +1,165 @@
+/* Set the background color and font size for the entire page */
+body {
+    background-color: bisque;
+    font-size: 20px;
+    /* Set the background image and styling for the background */
+    background-image: url(./pizza_bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; /* Add this for positioning */
+}
+
+/* Add a semi-transparent overlay over the background */
+body::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4); /* Adjust the opacity as needed (0.4 = 40% opacity) */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+/* Styling for the navbar brand */
+.navbar-brand {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* Styling for the logo inside the navbar brand */
+.navbar-brand img {
+    height: 100%;
+    margin-right: 10px;
+}
+
+/* Adjust the spacing between links in the navbar */
+.nav-item {
+    display: inline-block;
+}
+
+/* Styling for the links in the navbar */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    margin-left: 70px;
+    font-size: 22px;
+}
+
+/* Styling for the active link in the navbar */
+.nav-link.active {
+    background-color: black;
+}
+
+/* Styling for links on hover */
+.nav-link:hover {
+    color: blue;
+}
+
+/* Styling for the main container heading */
+.container h1 {
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed for vertical positioning */
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+/* Styling for Pizza Info section */
+.PizzaInfo {
+    background-color: #dae8d6;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Styling for Pizza Info section headings */
+.PizzaInfo h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Styling for Pizza Info input fields */
+.PizzaInfo label,
+.PizzaInfo input[type="number"],
+.PizzaInfo select {
+    margin: 5px 0;
+}
+
+/* Styling for Pizza Info checkboxes and radio buttons */
+.topping-options,
+.delivery-options {
+    display: flex;
+    align-items: center;
+}
+
+.topping-options label,
+.delivery-options label {
+    margin-right: 10px;
+}
+
+/* Styling for submit button in Pizza Info section */
+.PizzaInfo input[type="submit"] {
+    margin-top: 20px;
+}
+
+/* Form styling */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #b3b1f6;
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column */
+}
+
+/* Styling for form labels, inputs, and selects */
+form label,
+form input,
+form select {
+    margin: 5px 0; /* Reduce the margin between form elements */
+}
+
+/* Styling for form labels */
+form label {
+    font-weight: bold;
+}
+
+/* Styling for form input fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the submit button */
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f4d7e0;
+    color: rgb(4, 4, 4);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for the submit button on hover */
+form input[type="submit"]:hover {
+    background-color: #a13352;
+}
+
+/* Styling for hidden elements (if needed) */
+.hidden {
+    color: rgb(242, 233, 234);
+}
